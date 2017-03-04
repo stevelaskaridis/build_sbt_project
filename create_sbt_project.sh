@@ -62,7 +62,7 @@ echo "name := \"$PROJECT_NAME\"
 
 version := \"1.0\"
 
-scalaVersion := \"2.12.1\"
+scalaVersion := \"$SCALA_VERSION\"
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "$SPARK_VERSION" % "provided",

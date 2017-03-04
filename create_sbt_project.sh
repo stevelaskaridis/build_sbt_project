@@ -12,6 +12,10 @@ case $key in
     PROJECT_NAME="$2"
     shift
     ;;
+    -d|--directory)
+    cd $2
+    shift
+    ;;
     -v|--spark-version)
     SPARK_VERSION="$2"
     shift
@@ -25,6 +29,7 @@ case $key in
     This is a program aimed to create a Scala/Spark directory structure.
     Arguments:
       -m|--name             : Name of the program
+      -d|--directory        : Directory to create hierarchy tree
       -v|--spark-version    : Spark Version for dependencies
       -s|--scala-version    : Scala Version for project
       -h|--help             : Print this message
